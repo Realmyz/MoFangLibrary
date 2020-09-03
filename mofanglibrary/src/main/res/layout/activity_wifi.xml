@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".GuideActivity">
+
+    <TextView
+        android:id="@+id/btn_back"
+        android:layout_margin="10dp"
+        android:text="取消"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_corner"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="选择2.4GHz Wi-Fi网络并输入密码"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="提示：此设备只使用2.4GWi-Fi连接使用，不支持5G。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <RelativeLayout
+            android:background="@drawable/tip_icon"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:background="@drawable/wifi_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                </ImageView>
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/wifi_name"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:text="Apical001_5G"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/wifi_change"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/wifi_change"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+                </ImageView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/app_background"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:background="@drawable/wifi_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                </ImageView>
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/wifi_password"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPassword"
+                    android:textSize="18dp"
+                    android:hint="密码"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/visual"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/wifi_invisable"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+                </ImageView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/app_background"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </View>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:background="@drawable/button_corner"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:layout_margin="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

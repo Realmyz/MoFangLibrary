@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MoFangDemo</string>
+    <string name="txt_wifiap_name">AP Name:</string>
+    <string name="txt_wifiap_passwd">Password:</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_confirm">Confirm</string>
+</resources>
